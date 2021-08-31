@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <div id="main">
+      <header>
+        <h1 id="title">Survey</h1>
+        <p id="description">
+          A simple survey page created for
+          <a
+            href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form"
+            target="_blank"
+            >freeCodeCamp</a
+          >
+        </p>
+      </header>
+
+      <main id="main-content">
+        <form id="survey-form">
+          <div class="form-group">
+            <label for="name" id="name-label">Name:</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              placeholder="Enter name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email" id="email-label">Email:</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="you@company.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="age" id="number-label">Age:</label>
+            <input
+              id="number"
+              name="age"
+              type="number"
+              required
+              min="13"
+              max="150"
+              placeholder="18"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="dropdown"
+              ><option value="US">United States</option
+              ><option value="??">Other</option></select
+            >
+          </div>
+
+          <h3>Favorite Programming Language</h3>
+
+          <div class="form-group-column">
+            <label
+              ><input
+                type="radio"
+                name="group1"
+                value="JavaScript"
+                checked
+              />JavaScript</label
+            >
+            <label
+              ><input type="radio" name="group1" id="" value="C++" />C++</label
+            >
+            <label
+              ><input type="radio" name="group1" value="Python" />Python</label
+            >
+          </div>
+
+          <h3>Tools</h3>
+
+          <div class="form-group-column">
+            <label>
+              <input
+                type="checkbox"
+                name="group2"
+                value="vscode"
+                checked
+              />Visual Studio Code
+            </label>
+            <label>
+              <input type="checkbox" name="group2" value="vim" />VIM
+            </label>
+          </div>
+
+          <h3>Comments</h3>
+
+          <div class="form-group">
+            <textarea
+              placeholder="Anything else you would like to share"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <button id="submit">Submit</button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
